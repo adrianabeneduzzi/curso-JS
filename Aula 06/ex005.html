@@ -10,19 +10,36 @@
             background: rgb(99, 17, 17);  
             color: white;
             font: normal 16pt Arial;
-
-
         }    
-
     </style>
 </head>
 <body>
-    <h1>Iniciando os estudos </h1>
-    <p> Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique aqui</div>
+    <h1> Aprender: constância! </h1>
+    <p> Desistir não é uma opção! </p>
+    <p> Mão na massa: usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class ='msg'> Clique aqui </div>
         <script>
-        window.document.write("Seja bem vindo (a)");
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+       
+        /*
+        var d = window.document. getElementById('msg')
+        d.style.background= 'green'
+        d.innerText = 'Desistir não é uma opção!'
+        */
+
+       var d = window.document.querySelector ('div.msg')
+       d.style.color = 'blue'
+
+        //window.document.write('Seja bem vinda (o)!')
+        // window.document.write (p1.innerText)
+        //window.document.write ('Está escrito assim:'+p1.innerText)
+        //corpo.style.background = 'blue'
+        //p1.style.color = 'green'
+        //document.write(p1.innerText)
+        //document.write(p1.innerHTML)
+       //window.alert (p1.innerHTML)
+      
     </script>
 </body>
 </html>
